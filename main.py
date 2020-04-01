@@ -4,7 +4,7 @@ from flask import request
 import redis
 
 # Connect to the remote DB
-db = redis.Redis('task2-redis')
+db = redis.Redis("task3-redis")
 
 # Initialize the counter
 db.set("num_posts", 0)
