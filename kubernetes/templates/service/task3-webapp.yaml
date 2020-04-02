@@ -5,9 +5,8 @@ metadata:
 spec:
   selector:
     app: task3-webapp
-  type: LoadBalancer
+  type: NodePort
   ports:
    -  protocol: TCP
       port: 80
       targetPort: 5000
-
