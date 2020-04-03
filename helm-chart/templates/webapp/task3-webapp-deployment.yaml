@@ -21,7 +21,8 @@ spec:
         app: task3-webapp
     spec:
       containers:
-      - image: {{ .Values.python.image }}:{{ .Values.version }}
+      - name: task3-webapp
+        image: {{ .Values.python.image }}:{{ .Values.version }}
         imagePullPolicy: Always
         name: task3-webapp
         ports:

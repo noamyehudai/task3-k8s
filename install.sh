@@ -7,4 +7,4 @@ docker build -t noamyehudai/task3-image:latest .
 docker push noamyehudai/task3-image:latest
 
 # Run the cluster using Helm
-helm install task3 ./kubernetes/
+helm install task3 ./helm-chart/
